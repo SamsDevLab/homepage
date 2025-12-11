@@ -108,9 +108,8 @@ header {
   align-items: center;
   min-height: 40vh;
   min-width: 50vw;
-  border: 2px solid firebrick;
-  /* background: #e8ecf2;
-  border-radius: 0.2rem; */
+  background: #e8ecf2;
+  border-radius: 0.2rem;
 }
 
 .header-and-image-container {
