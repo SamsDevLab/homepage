@@ -79,9 +79,9 @@ header::before {
   min-height: 60vh;
   min-width: 200vw;
   left: -15rem;
-  top: -17.5rem;
+  top: -15rem;
   background-color: #1c2a44;
-  transform: skew(145deg, -10deg);
+  transform: skew(145deg, -4deg);
   z-index: -1;
 }
 
