@@ -46,3 +46,17 @@ button,
 select {
   font: inherit;
 }
+
+/* Project Below */
+
+@font-face {
+  font-family: "Rockwell";
+  src: url("./fonts/Rockwell-ExtraBold.woff2") format("woff2"),
+    url("./fonts/Rockwell-ExtraBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Space Grotesk";
+  src: url("./fonts/SpaceGrotesk-Regular.woff2") format("woff2"),
+    url("./fonts/SpaceGrotesk-Regular.woff") format("woff");
+}
