@@ -69,17 +69,31 @@ Beige - #faf3e0
 
 body {
   background: #faf3e0;
+  position: relative;
+  overflow-x: hidden;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  min-height: 60vh;
+  min-width: 200vw;
+  left: -15rem;
+  top: -17.5rem;
+  background-color: #1c2a44;
+  transform: skew(145deg, -10deg);
+  z-index: -1;
 }
 
 header {
-  min-height: 33.5vh;
+  min-height: 40vh;
 }
 
 main {
-  min-height: 33.5vh;
+  min-height: 40vh;
 }
 
 footer {
   background: #1c2a44;
-  min-height: 33vh;
+  min-height: 20vh;
 }
