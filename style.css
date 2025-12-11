@@ -91,6 +91,7 @@ header::before {
   background-color: #1c2a44;
   transform: skew(145deg, -4deg);
   z-index: -1;
+  box-shadow: 0px 0px 1px 2px #121212;
 }
 
 header {
@@ -108,8 +109,9 @@ header {
   align-items: center;
   min-height: 40vh;
   min-width: 50vw;
-  background: #e8ecf2;
+  background: #ffffff;
   border-radius: 0.2rem;
+  box-shadow: 2px 2px 8px #121212;
 }
 
 .header-and-image-container {
@@ -121,11 +123,12 @@ header {
 .header-and-image-container img {
   max-height: 60vh;
   border-radius: 0.2rem;
+  box-shadow: 0px 0px 8px 2px #121212;
 }
 
 .description-container {
   max-width: 50%;
-  margin-right: 1.25rem;
+  margin-right: 1.75rem;
   display: flex;
   flex-direction: column;
   gap: 1rem;
