@@ -60,3 +60,18 @@ select {
   src: url("./fonts/SpaceGrotesk-Regular.woff2") format("woff2"),
     url("./fonts/SpaceGrotesk-Regular.woff") format("woff");
 }
+
+/*
+Colors:
+Purple - #1c2a44
+Beige - #faf3e0
+*/
+
+body {
+  background: #faf3e0;
+}
+
+footer {
+  background: #1c2a44;
+  min-height: 33vh;
+}
