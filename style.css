@@ -120,7 +120,7 @@ header {
 
 .header-and-image-container img {
   max-height: 60vh;
-  /* border-radius: 0.2rem; */
+  border-radius: 0.2rem;
 }
 
 .description-container {
