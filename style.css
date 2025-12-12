@@ -71,8 +71,12 @@ body {
   background: #faf3e0;
   position: relative;
   overflow-x: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
+h1,
 h2 {
   font-family: "Rockwell";
 }
@@ -96,10 +100,9 @@ header::before {
 
 header {
   display: flex;
-  justify-content: center;
   align-items: center;
-  margin-top: 2rem;
-  height: 65vh;
+  margin-top: 4rem;
+  min-height: 60vh;
 }
 
 .about-me-container {
@@ -108,12 +111,12 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: end;
-  min-height: 40vh;
-  min-width: 50vw;
-  background: #ffffff;
+  max-height: 37vh;
+  max-width: 42.5vw;
+  background: #f8f5ee;
   border-radius: 0.2rem;
   box-shadow: 2px 2px 8px #121212;
-  padding: 1rem;
+  padding: 1.5rem;
   gap: 1.25rem;
 }
 
@@ -124,14 +127,21 @@ header {
 }
 
 .header-and-image-container img {
-  max-height: 60vh;
+  max-height: 50vh;
   border-radius: 0.2rem;
   box-shadow: 0px 0px 8px 2px #121212;
 }
 
+.header-and-image-container h1 {
+  position: absolute;
+  font-size: 1.75rem;
+  bottom: 1rem;
+  left: 1.75rem;
+}
+
 .description-and-links-container {
   max-width: 50%;
-  margin-right: 1.75rem;
+  margin-right: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
