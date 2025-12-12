@@ -108,18 +108,9 @@ header {
 
 .about-me-container {
   position: relative;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center; */
-  /* align-items: end; */
-  /* max-height: 50vh; */
-  /* min-width: 50vw; */
   background: #f8f5ee;
   border-radius: 0.2rem;
   box-shadow: 2px 2px 8px #121212;
-  /* padding: 1.5rem; */
-  /* margin: 1rem; */
-  /* gap: 1.25rem; */
 
   /* 
   Trying to float image below: 
