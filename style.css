@@ -111,40 +111,41 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: end;
-  max-height: 37vh;
-  max-width: 42.5vw;
+  min-height: 40vh;
+  min-width: 50vw;
   background: #f8f5ee;
   border-radius: 0.2rem;
   box-shadow: 2px 2px 8px #121212;
   padding: 1.5rem;
+  margin: 1rem;
   gap: 1.25rem;
 }
 
-.header-and-image-container {
+.main-photo {
   position: absolute;
-  z-index: 1;
-  left: -1rem;
-}
-
-.header-and-image-container img {
+  left: 0;
   max-height: 50vh;
   border-radius: 0.2rem;
   box-shadow: 0px 0px 8px 2px #121212;
 }
 
-.header-and-image-container h1 {
+.main-header {
   position: absolute;
   font-size: 1.75rem;
-  bottom: 1rem;
+  bottom: -1rem;
   left: 1.75rem;
 }
 
 .description-and-links-container {
-  max-width: 50%;
+  max-width: 55%;
   margin-right: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+}
+
+.description-and-links-container h2 {
+  font-size: 1.25rem;
 }
 
 .social-links-container {
@@ -162,4 +163,20 @@ main {
 footer {
   background: #1c2a44;
   min-height: 20vh;
+}
+
+@media (max-width: 1000px) {
+  body {
+    background: green;
+  }
+
+  .main-photo {
+    max-height: 45vh;
+  }
+
+  .main-header {
+    color: #f8f5ee;
+    top: -2rem;
+    left: 16rem;
+  }
 }
