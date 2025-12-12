@@ -29,7 +29,7 @@ p,
 li,
 figcaption {
   text-wrap: pretty;
-  max-width: 65ch;
+  max-width: 70ch;
 }
 
 img,
@@ -74,6 +74,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
+  margin-left: 1rem;
 }
 
 h1,
@@ -107,53 +108,64 @@ header {
 
 .about-me-container {
   position: relative;
-  display: flex;
+  /* display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: end;
-  min-height: 40vh;
-  min-width: 50vw;
+  justify-content: center; */
+  /* align-items: end; */
+  /* max-height: 50vh; */
+  /* min-width: 50vw; */
   background: #f8f5ee;
   border-radius: 0.2rem;
   box-shadow: 2px 2px 8px #121212;
-  padding: 1.5rem;
-  margin: 1rem;
-  gap: 1.25rem;
+  /* padding: 1.5rem; */
+  /* margin: 1rem; */
+  /* gap: 1.25rem; */
+
+  /* 
+  Trying to float image below: 
+    If something is grayed out above it's part of the original build and I'm testing
+    a new direction
+  */
 }
 
 .main-photo {
-  position: absolute;
-  left: 0;
-  max-height: 50vh;
+  /* position: absolute; */
+  /* left: 0; */
+  max-height: 45vh;
   border-radius: 0.2rem;
   box-shadow: 0px 0px 8px 2px #121212;
+  /* bottom: -3rem; */
+
+  /* Trying to float it below: */
+  float: left;
+  margin-right: 1rem;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
 }
 
 .main-header {
   position: absolute;
   font-size: 1.75rem;
   bottom: -1rem;
-  left: 1.75rem;
+  left: 0.75rem;
 }
 
-.description-and-links-container {
-  max-width: 55%;
-  margin-right: 2rem;
-  display: flex;
-  flex-direction: column;
-  gap: 1.25rem;
-}
-
-.description-and-links-container h2 {
+h2 {
   font-size: 1.25rem;
+  margin: 1rem;
+  margin-top: 2rem;
+}
+
+p {
+  margin: 1rem;
 }
 
 .social-links-container {
-  min-width: 6%;
+  max-height: 1.5rem;
+  max-width: 2.5rem;
   display: flex;
-  gap: 0.5rem;
-  align-self: flex-end;
-  margin-right: 4.75rem;
+  margin-left: auto;
+  margin-right: 6rem;
 }
 
 main {
@@ -165,18 +177,14 @@ footer {
   min-height: 20vh;
 }
 
-@media (max-width: 1000px) {
-  body {
-    background: green;
-  }
-
-  .main-photo {
-    max-height: 45vh;
-  }
-
+@media (max-width: 1200px) {
   .main-header {
     color: #f8f5ee;
-    top: -2rem;
+    top: -3rem;
     left: 16rem;
+  }
+
+  .social-links-container {
+    display: none;
   }
 }
