@@ -111,24 +111,17 @@ header {
   background: #f8f5ee;
   border-radius: 0.2rem;
   box-shadow: 2px 2px 8px #121212;
-
-  /* 
-  Trying to float image below: 
-    If something is grayed out above it's part of the original build and I'm testing
-    a new direction
-  */
 }
 
 .main-photo {
-  max-height: 45vh;
-  border-radius: 0.2rem;
-  box-shadow: 0px 0px 8px 2px #121212;
-
-  /* Trying to float it below: */
   float: left;
   margin-right: 1rem;
   margin-top: -1rem;
   margin-bottom: -1rem;
+
+  max-height: 45vh;
+  border-radius: 0.2rem;
+  box-shadow: 0px 0px 8px 2px #121212;
 }
 
 .main-header {
