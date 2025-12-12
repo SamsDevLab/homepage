@@ -105,13 +105,16 @@ header {
 .about-me-container {
   position: relative;
   display: flex;
-  justify-content: right;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
   min-height: 40vh;
   min-width: 50vw;
   background: #ffffff;
   border-radius: 0.2rem;
   box-shadow: 2px 2px 8px #121212;
+  padding: 1rem;
+  gap: 1.25rem;
 }
 
 .header-and-image-container {
@@ -126,12 +129,20 @@ header {
   box-shadow: 0px 0px 8px 2px #121212;
 }
 
-.description-container {
+.description-and-links-container {
   max-width: 50%;
   margin-right: 1.75rem;
   display: flex;
   flex-direction: column;
-  gap: 1rem;
+  gap: 1.25rem;
+}
+
+.social-links-container {
+  min-width: 6%;
+  display: flex;
+  gap: 0.5rem;
+  align-self: flex-end;
+  margin-right: 4.75rem;
 }
 
 main {
