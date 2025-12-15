@@ -73,8 +73,6 @@ body {
   overflow-x: hidden;
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  margin-left: 1rem;
 }
 
 h1,
@@ -86,6 +84,7 @@ p {
   font-family: "Space Grotesk";
 }
 
+/* Finished! */
 header::before {
   content: "";
   position: absolute;
@@ -102,8 +101,6 @@ header::before {
 header {
   display: flex;
   align-items: center;
-  margin-top: 4rem;
-  min-height: 60vh;
 }
 
 .about-me-container {
@@ -115,29 +112,31 @@ header {
 
 .main-photo {
   float: left;
-  margin-right: 1rem;
-  margin-top: -1rem;
-  margin-bottom: -1rem;
+  margin-right: 1.5rem;
+  margin-top: -2rem;
+  margin-bottom: -2rem;
 
-  max-height: 45vh;
+  max-height: 50vh;
   border-radius: 0.2rem;
   box-shadow: 0px 0px 8px 2px #121212;
 }
 
-.main-header {
+h1 {
   position: absolute;
   font-size: 1.75rem;
-  bottom: -1rem;
-  left: 0.75rem;
+  bottom: 0.1rem;
+  left: 1.75rem;
 }
 
-h2 {
+.description-container {
+  padding: 1.5rem;
+}
+
+.description-container h2 {
   font-size: 1.25rem;
-  margin: 1rem;
-  margin-top: 2rem;
 }
 
-p {
+.description-container p {
   margin: 1rem;
 }
 
@@ -146,7 +145,8 @@ p {
   max-width: 2.5rem;
   display: flex;
   margin-left: auto;
-  margin-right: 6rem;
+  margin-right: 7rem;
+  margin-bottom: 1rem;
 }
 
 main {
@@ -159,10 +159,19 @@ footer {
 }
 
 @media (max-width: 1200px) {
-  .main-header {
+  h1 {
     color: #f8f5ee;
-    top: -3rem;
-    left: 16rem;
+    top: -2rem;
+    left: 12rem;
+  }
+
+  .main-photo {
+    margin-left: -2rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .description-container {
+    max-width: 60ch;
   }
 
   .social-links-container {
