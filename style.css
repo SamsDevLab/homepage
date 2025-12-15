@@ -73,6 +73,7 @@ body {
   overflow-x: hidden;
   display: flex;
   justify-content: center;
+  align-items: start;
 }
 
 h1,
@@ -101,6 +102,7 @@ header::before {
 header {
   display: flex;
   align-items: center;
+  margin-top: 6rem;
 }
 
 .about-me-container {
@@ -113,7 +115,7 @@ header {
 .main-photo {
   float: left;
   margin-right: 1.5rem;
-  margin-top: -2rem;
+  margin-top: -1.5rem;
   margin-bottom: -2rem;
 
   max-height: 50vh;
@@ -158,16 +160,17 @@ footer {
   min-height: 20vh;
 }
 
-@media (max-width: 1200px) {
+/* Tablet */
+@media (max-width: 1024px) {
   h1 {
     color: #f8f5ee;
     top: -2rem;
-    left: 12rem;
+    left: 15rem;
   }
 
   .main-photo {
-    margin-left: -2rem;
-    margin-bottom: 0.25rem;
+    margin-left: -3rem;
+    margin-bottom: 0.1rem;
   }
 
   .description-container {
@@ -176,5 +179,39 @@ footer {
 
   .social-links-container {
     display: none;
+  }
+}
+
+/* Cell Phone */
+@media (max-width: 600px) {
+  header {
+    margin-top: 3.5rem;
+  }
+
+  .about-me-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: transparent;
+    box-shadow: none;
+  }
+
+  .description-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .main-photo {
+    float: none;
+    margin: 1rem;
+    max-height: 70vh;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+    top: 30rem;
+    left: 6rem;
+    color: black;
   }
 }
