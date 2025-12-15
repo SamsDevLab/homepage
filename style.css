@@ -102,7 +102,7 @@ header::before {
 header {
   display: flex;
   align-items: center;
-  margin-top: 6rem;
+  margin-top: 4rem;
 }
 
 .about-me-container {
@@ -185,7 +185,8 @@ footer {
 /* Cell Phone */
 @media (max-width: 600px) {
   header {
-    margin-top: 3.5rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
   }
 
   .about-me-container {
@@ -195,6 +196,11 @@ footer {
     background-color: transparent;
     box-shadow: none;
   }
+  .main-photo {
+    float: none;
+    margin: 1rem;
+    max-height: 70vh;
+  }
 
   .description-container {
     display: flex;
@@ -202,16 +208,17 @@ footer {
     align-items: center;
   }
 
-  .main-photo {
-    float: none;
-    margin: 1rem;
-    max-height: 70vh;
-  }
-
   h1 {
     font-size: 2.25rem;
     top: 30rem;
-    left: 6rem;
+    left: 5.5rem;
     color: black;
+  }
+
+  .social-links-container {
+    display: flex;
+    min-width: 10vw;
+    max-height: 2.25rem;
+    margin-left: 0;
   }
 }
