@@ -186,10 +186,6 @@ need to be independent of the profile pic
   border-radius: 0.2rem;
 }
 
-/* .one {
-  grid-column: 1/2;
-} */
-
 footer {
   background: #1c2a44;
   min-height: 20vh;
@@ -214,6 +210,10 @@ footer {
 
   .social-links-container {
     display: none;
+  }
+
+  .portfolio-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -257,5 +257,9 @@ footer {
     margin-left: 0.75rem;
     margin-bottom: 0.5rem;
     margin-top: 0.5rem;
+  }
+
+  .portfolio-container {
+    grid-template-columns: 1fr;
   }
 }
