@@ -73,14 +73,14 @@ body {
   overflow-x: hidden;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   padding: 1rem;
   gap: 4rem;
 }
 
 h1,
-h2 {
+h2,
+h3 {
   font-family: "Rockwell";
 }
 
@@ -130,32 +130,19 @@ header {
 }
 
 .main-photo {
-  /* float: left; */
-  /* margin-right: 1.5rem; */
-  /* margin-top: -1.5rem; */
-  /* margin-bottom: -2rem; */
-
   max-height: 50vh;
   border-radius: 0.2rem;
   box-shadow: 0px 0px 8px 2px #121212;
 }
 
 h1 {
-  /* position: absolute; */
-  /* align-self: center; */
   transform: translateY(-3rem);
   font-size: 1.75rem;
-  /* bottom: 0.1rem; */
-  /* left: 1.75rem; */
 }
 
 .description-container {
-  padding: 1.5rem;
+  padding: 1.25rem;
 }
-
-/* .description-container h2 {
-  font-size: 1.25rem;
-} */
 
 h2 {
   font-size: 1.25rem;
@@ -175,13 +162,6 @@ h2 {
 }
 
 main {
-  /* Start here tomorrow. Will need to figure out which projects you want to share and grab their
-images
-Before doing this, may want to figure out that h1/profile picture situation. h1 does not
-need to be independent of the profile pic
-*/
-
-  /* min-height: 60vh; */
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
@@ -193,13 +173,30 @@ need to be independent of the profile pic
   grid-template-columns: repeat(3, 1fr);
   gap: 1rem;
   margin-top: 1rem;
+  max-width: 70vw;
 }
 
 .project {
-  border: 2px solid black;
-  min-height: 2rem;
-  min-width: 5rem;
+  display: flex;
+  flex-direction: column;
+  background: #f8f5ee;
+  gap: 0.5rem;
   border-radius: 0.2rem;
+  border: 2px solid #1c2a44;
+}
+
+.project-name-and-link-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.project-links {
+  display: flex;
+  min-width: 2rem;
+  margin-right: 2rem;
 }
 
 footer {
@@ -211,18 +208,17 @@ footer {
 @media (max-width: 1024px) {
   h1 {
     color: #f8f5ee;
-    /* top: -2rem;
-    left: 15rem; */
-    transform: translate(100%, -950%);
+    transform: translate(115%, -1075%);
   }
 
-  .main-photo {
-    margin-left: -3rem;
-    margin-bottom: 0.1rem;
+  .profile-pic-container {
+    transform: translate(-7%, -7%);
+    margin-right: 0;
+    margin-bottom: -3.5rem;
   }
 
   .description-container {
-    max-width: 60ch;
+    max-width: 65ch;
   }
 
   .social-links-container {
@@ -236,6 +232,10 @@ footer {
 
 /* Cell Phone */
 @media (max-width: 600px) {
+  body {
+    margin: 1rem;
+  }
+
   header {
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -248,9 +248,14 @@ footer {
     background-color: transparent;
     box-shadow: none;
   }
+
+  .profile-pic-container {
+    margin-top: 1rem;
+    transform: translateX(1%);
+  }
+
   .main-photo {
     float: none;
-    margin: 1rem;
     max-height: 70vh;
   }
 
@@ -258,12 +263,11 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 1rem;
   }
 
   h1 {
     font-size: 2.25rem;
-    /* top: 30rem;
-    left: 5.5rem; */
     transform: translate(-2%, -150%);
     color: black;
   }
@@ -273,7 +277,6 @@ footer {
     min-width: 10vw;
     max-height: 2.25rem;
     margin-left: 0.75rem;
-    margin-bottom: 0.5rem;
     margin-top: 0.5rem;
   }
 
