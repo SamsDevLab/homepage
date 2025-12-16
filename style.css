@@ -115,11 +115,25 @@ header {
   box-shadow: 2px 2px 8px #121212;
 }
 
-.main-photo {
+.profile-pic-container {
   float: left;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-right: 1.5rem;
   margin-top: -1.5rem;
-  margin-bottom: -2rem;
+  margin-bottom: -3rem;
+  border-radius: 0.2rem;
+
+  /* box-shadow: 0px 0px 8px 2px #121212; */
+}
+
+.main-photo {
+  /* float: left; */
+  /* margin-right: 1.5rem; */
+  /* margin-top: -1.5rem; */
+  /* margin-bottom: -2rem; */
 
   max-height: 50vh;
   border-radius: 0.2rem;
@@ -127,10 +141,12 @@ header {
 }
 
 h1 {
-  position: absolute;
+  /* position: absolute; */
+  /* align-self: center; */
+  transform: translateY(-3rem);
   font-size: 1.75rem;
-  bottom: 0.1rem;
-  left: 1.75rem;
+  /* bottom: 0.1rem; */
+  /* left: 1.75rem; */
 }
 
 .description-container {
@@ -195,8 +211,9 @@ footer {
 @media (max-width: 1024px) {
   h1 {
     color: #f8f5ee;
-    top: -2rem;
-    left: 15rem;
+    /* top: -2rem;
+    left: 15rem; */
+    transform: translate(100%, -950%);
   }
 
   .main-photo {
@@ -245,8 +262,9 @@ footer {
 
   h1 {
     font-size: 2.25rem;
-    top: 30rem;
-    left: 5.5rem;
+    /* top: 30rem;
+    left: 5.5rem; */
+    transform: translate(-2%, -150%);
     color: black;
   }
 
