@@ -324,13 +324,27 @@ footer {
   }
 
   .contact-me-container {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 1.5rem;
+  }
+
+  .contact-me-container h2 {
+    align-self: center;
+  }
+
+  .social-links-footer {
+    align-self: center;
+  }
+
+  .social-links-footer img {
+    min-height: 2rem;
   }
 
   .animated-profile-pic {
     margin: 0;
-    grid-column: 1/2;
-    grid-row: 6/7;
+    padding: 0;
+    min-width: 100vw;
   }
 }
