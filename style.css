@@ -72,8 +72,11 @@ body {
   position: relative;
   overflow-x: hidden;
   display: flex;
-  justify-content: center;
-  align-items: start;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  padding: 1rem;
+  gap: 4rem;
 }
 
 h1,
@@ -101,7 +104,7 @@ header::before {
 
 header {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   margin-top: 4rem;
 }
 
@@ -134,7 +137,11 @@ h1 {
   padding: 1.5rem;
 }
 
-.description-container h2 {
+/* .description-container h2 {
+  font-size: 1.25rem;
+} */
+
+h2 {
   font-size: 1.25rem;
 }
 
@@ -152,8 +159,36 @@ h1 {
 }
 
 main {
-  min-height: 60vh;
+  /* Start here tomorrow. Will need to figure out which projects you want to share and grab their
+images
+Before doing this, may want to figure out that h1/profile picture situation. h1 does not
+need to be independent of the profile pic
+*/
+
+  /* min-height: 60vh; */
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  min-width: 50vw;
 }
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.project {
+  border: 2px solid black;
+  min-height: 2rem;
+  min-width: 5rem;
+  border-radius: 0.2rem;
+}
+
+/* .one {
+  grid-column: 1/2;
+} */
 
 footer {
   background: #1c2a44;
@@ -219,6 +254,8 @@ footer {
     display: flex;
     min-width: 10vw;
     max-height: 2.25rem;
-    margin-left: 0;
+    margin-left: 0.75rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
   }
 }
