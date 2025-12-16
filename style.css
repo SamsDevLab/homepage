@@ -214,11 +214,19 @@ footer {
   grid-template-columns: repeat(2, 1fr);
   margin: 2rem;
   align-items: center;
+  gap: 2rem;
+}
+
+.communication-containers {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
 }
 
 .communication-container {
   display: flex;
   gap: 0.75rem;
+  align-items: center;
 }
 
 .communication-container img {
