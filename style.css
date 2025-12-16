@@ -103,7 +103,6 @@ header::before {
 
 header {
   display: flex;
-  /* align-items: center; */
   margin-top: 4rem;
 }
 
@@ -163,7 +162,7 @@ main {
   margin-top: 2rem;
   display: flex;
   flex-direction: column;
-  min-width: 50vw;
+  justify-content: center;
   gap: 0.3rem;
 }
 
@@ -203,18 +202,17 @@ main {
 
 footer {
   background: #1c2a44;
-  min-width: 100vw;
   color: #f8f5ee;
   display: flex;
   justify-content: center;
+  min-width: 100vw;
 }
 
 .contact-me-container {
-  max-width: 55%;
+  max-width: 50vw;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 2rem;
-  gap: 0.2rem;
   align-items: center;
 }
 
@@ -227,10 +225,26 @@ footer {
   max-height: 1.5rem;
 }
 
+.social-links-footer {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.social-links-footer img {
+  max-height: 2rem;
+}
+
+/* .my-icon {
+  fill: #f8f5ee;
+} */
+
 .animated-profile-pic {
-  grid-row: 1/6;
+  grid-row: 1/7;
   grid-column: 2/3;
-  max-width: 13rem;
+  max-width: 15rem;
+  margin-left: 5rem;
+  border-radius: 0.2rem;
+  align-self: center;
 }
 
 /* Tablet */
@@ -261,10 +275,6 @@ footer {
 
 /* Cell Phone */
 @media (max-width: 600px) {
-  body {
-    margin: 1rem;
-  }
-
   header {
     margin-top: 2rem;
     margin-bottom: 1rem;
@@ -311,5 +321,16 @@ footer {
 
   .portfolio-container {
     grid-template-columns: 1fr;
+  }
+
+  .contact-me-container {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .animated-profile-pic {
+    margin: 0;
+    grid-column: 1/2;
+    grid-row: 6/7;
   }
 }
