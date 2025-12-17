@@ -67,14 +67,18 @@ Purple - #1c2a44
 Beige - #faf3e0
 */
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   background: #faf3e0;
   position: relative;
-  overflow-x: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3rem;
+  gap: 2rem;
 }
 
 h1,
@@ -92,7 +96,7 @@ header::before {
   content: "";
   position: absolute;
   min-height: 60vh;
-  min-width: 200vw;
+  min-width: 350vw;
   left: -15rem;
   top: -15rem;
   background-color: #1c2a44;
@@ -155,10 +159,10 @@ h2 {
   display: flex;
   margin-left: auto;
   margin-right: 7rem;
+  margin-bottom: 1rem;
 }
 
 main {
-  margin-top: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -290,11 +294,6 @@ footer {
 
 /* Cell Phone */
 @media (max-width: 600px) {
-  header {
-    margin-top: 2rem;
-    margin-bottom: 1rem;
-  }
-
   .about-me-container {
     display: flex;
     flex-direction: column;
@@ -304,13 +303,14 @@ footer {
   }
 
   .profile-pic-container {
-    margin-top: 1rem;
-    transform: translateX(1%);
+    transform: none;
+    margin: none;
   }
 
   .main-photo {
     float: none;
-    max-height: 70vh;
+    /* max-height: 70vh; */
+    /* max-width: 90vw; */
   }
 
   .description-container {
