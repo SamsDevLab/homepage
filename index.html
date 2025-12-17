@@ -209,11 +209,21 @@
             alt="Link to Sam Hadfield X (formerly Twitter) profile"
           />
         </div>
-        <img
-          src="./images/photos/Me - Animated.png"
-          alt="Animated photo of Sam at desk"
-          class="animated-profile-pic"
-        />
+        <picture class="animated-profile-pic">
+          <source
+            media="(width > 1024px)"
+            srcset="./images/photos/me-animated.png"
+          />
+          <source
+            media="(width < 1024px)"
+            srcset="./images/photos/me-animated-cropped.jpg"
+          />
+          <img
+            src="./images/photos/me-animated.png"
+            alt="Animated photo of Sam at desk"
+            class="animated-profile-pic"
+          />
+        </picture>
       </section>
     </footer>
   </body>
