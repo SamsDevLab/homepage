@@ -248,7 +248,7 @@ footer {
 }
 
 .social-links-footer img {
-  max-height: 2rem;
+  min-height: 2rem;
 }
 
 .animated-profile-pic {
