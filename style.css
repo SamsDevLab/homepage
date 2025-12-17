@@ -154,12 +154,15 @@ h2 {
 }
 
 .social-links-container {
-  max-height: 1.5rem;
-  max-width: 2.5rem;
   display: flex;
-  margin-left: auto;
-  margin-right: 7rem;
+  justify-content: end;
+  margin-right: 3rem;
   margin-bottom: 1rem;
+  gap: 0.5rem;
+}
+
+.social-links-container img {
+  min-height: 1.5rem;
 }
 
 main {
