@@ -78,7 +78,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 4rem;
+  gap: 6rem;
 }
 
 h1,
@@ -265,26 +265,33 @@ footer {
 
 /* Tablet */
 @media (max-width: 1024px) {
-  /* First Draft */
+  body {
+    gap: 3rem;
+  }
 
   h1 {
     color: #f8f5ee;
-    top: 0.1rem;
-    transform: translateX(115%);
+    font-size: 1.5rem;
+    top: 1rem;
+    transform: translateX(125%);
   }
 
   .about-me-container {
-    max-width: 70vw;
+    max-width: 80vw;
+    padding: 1rem;
   }
 
   .profile-pic-container {
-    transform: translate(-7%, -7%);
+    transform: translate(-8%, -3%);
     margin-right: 0;
-    margin-bottom: -2rem;
+    margin-bottom: 0.01rem;
   }
 
   .description-container {
-    min-width: 100%;
+    /* min-width: 100%; */
+    /* margin-top: 3rem; */
+    /* padding: 0.3rem; */
+    max-width: 55ch;
   }
 
   .social-links-container {
@@ -309,6 +316,10 @@ footer {
 
 /* Cell Phone */
 @media (max-width: 600px) {
+  body {
+    gap: 1rem;
+  }
+
   .about-me-container {
     display: flex;
     flex-direction: column;
@@ -345,7 +356,7 @@ footer {
     color: black;
   }
 
-  .description-container h2 {
+  h2 {
     font-size: 1.5rem;
   }
 
