@@ -61,12 +61,6 @@ select {
     url("./fonts/SpaceGrotesk-Regular.woff") format("woff");
 }
 
-/*
-Colors:
-Purple - #1c2a44
-Beige - #faf3e0
-*/
-
 html,
 body {
   overflow-x: hidden;
@@ -91,7 +85,6 @@ p {
   font-family: "Space Grotesk";
 }
 
-/* Finished! */
 header::before {
   content: "";
   position: absolute;
@@ -135,16 +128,18 @@ header {
   min-height: 25vh;
   border-radius: 0.2rem;
   box-shadow: 0px 0px 8px 2px #121212;
+  margin-right: 2rem;
 }
 
 h1 {
   position: absolute;
   bottom: 1rem;
+  left: 1.5rem;
   font-size: 1.75rem;
 }
 
 .description-container {
-  padding: 1.25rem;
+  margin: 3rem;
 }
 
 h2 {
@@ -159,7 +154,7 @@ h2 {
   display: flex;
   justify-content: end;
   margin-right: 3rem;
-  /* margin-bottom: 1rem; */
+  margin-bottom: 1rem;
   gap: 0.5rem;
 }
 
@@ -273,6 +268,7 @@ footer {
     color: #f8f5ee;
     font-size: 1.5rem;
     top: 1rem;
+    left: 3rem;
     transform: translateX(125%);
   }
 
@@ -287,11 +283,13 @@ footer {
     margin-bottom: 0.01rem;
   }
 
+  .main-photo {
+    margin-right: 0;
+  }
+
   .description-container {
-    /* min-width: 100%; */
-    /* margin-top: 3rem; */
-    /* padding: 0.3rem; */
     max-width: 55ch;
+    margin: 2rem;
   }
 
   .social-links-container {
@@ -347,12 +345,14 @@ footer {
     flex-direction: column;
     align-items: center;
     padding: 0;
+    margin: 1rem;
   }
 
   h1 {
     font-size: 2.25rem;
     transform: none;
     top: unset;
+    left: 2rem;
     color: black;
   }
 
