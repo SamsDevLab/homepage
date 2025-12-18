@@ -2,9 +2,13 @@
 
 Mock homepage/portfolio project for "The Odin Project" curriculum
 
-## 🗣️ Description
+## 🗣️ Description:
 
 Mock homepage to explore responsive design and accessibility with semantic HTML
+
+## Live Preview:
+
+[Sam's Dev Lab | Homepage](https://samsdevlab.github.io/homepage/)
 
 ## 👨‍💻 Technologies Utilized:
 
@@ -18,7 +22,7 @@ Mock homepage to explore responsive design and accessibility with semantic HTML
 - Phone, Email, and External Link icons from [Pictogrammers](https://pictogrammers.com/library/mdi/)
 - Animated Sam's Dev Lab photo generated from ChatGPT custom prompt
 
-## 💻 Screenshots
+## 💻 Screenshots:
 
 ### Desktop
 
